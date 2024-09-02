@@ -1,0 +1,202 @@
+ @font-face {
+    font-family: vedhansh;
+    src: url(Font/NeueHaasDisplayMediu.ttf);
+ }
+ 
+ * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: vedhansh;
+}
+
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #6d93fd3b;
+    position: relative;
+    padding: 0 2vw;
+}
+#nav_bar{
+    padding: 2vw 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#navrightpart{
+    align-items: center;
+    display: flex;
+    gap: 1vw;
+}
+#navrightpart h4{
+    padding: 10px 20px;
+    border: 1px solid rgba(156, 156, 156, 0.514);
+    border-radius: 50px;
+    font-weight: 500;
+    color: rgb(54, 54, 54);
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+}
+#navrightpart h4 a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.719);
+    position: relative;
+    z-index: 9;
+}
+#navrightpart h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.2s;
+}
+#navrightpart h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+#navrightpart h4:hover a{
+    color: white;
+}
+#center{
+    height: 65vh;
+    width: 100%;
+    position: relative;
+    padding-bottom: 2vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+}
+#left h3{
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2.5vw;
+    text-align: left;
+}
+#right h1{
+    font-size: 8vw;
+    line-height: 8vw;
+    text-align: right;
+}
+#left h2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 3vw;
+}
+#page1 video{
+    border-radius: 30px;
+    margin-top: 3vw;
+    width: 100%;
+    position: relative;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+#movingtext{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+#movingtext::-webkit-scrollbar{
+    display: none;
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;  
+}
+#movingtext h1{
+    padding: 10vh 5vw;
+    font-size: 9vw;
+    display: inline-block;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #6d93fd3b;
+    color: #061626;
+}
+h1 {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.cred {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login {
+    margin-bottom: 16px;
+    
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #6d93fd3b;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 48%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: none;
+}
+
+.back-button {
+    background-color: #f5f5f5;
+    color: #061626;
+}
+
+.submit-button {
+    background-color: #0a0f14;
+    color: #ffffff;
+}
+
+.back-button:hover,
+.submit-button:hover {
+    opacity: 0.7;
+}
