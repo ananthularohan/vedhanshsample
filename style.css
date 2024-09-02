@@ -16,18 +16,21 @@ font-family: vedhansh;
     background-color: #6d93fd3b;
     position: relative;
     padding: 0 2vw;
+    overflow-x: hidden;
 }
 #nav_bar{
     padding: 2vw 0vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 #navrightpart{
     align-items: center;
     display: flex;
     gap: 1vw;
+    flex-wrap: wrap;
 }
 #navrightpart h4{
     padding: 10px 20px;
